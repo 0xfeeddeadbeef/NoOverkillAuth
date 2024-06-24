@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <RestoreUseStaticGraphEvaluation>true</RestoreUseStaticGraphEvaluation>
+    <MinClientVersion>5.0</MinClientVersion>
+    <MSBuildCopyContentTransitively>true</MSBuildCopyContentTransitively>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Features>strict</Features>
+    <WarningLevel>9999</WarningLevel>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <Company>TBC Bank</Company>
+    <Copyright>© TBC Bank</Copyright>
+    <Authors>gchakhidze</Authors>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>embedded</DebugType>
+    <Deterministic>false</Deterministic>
+    <ContinuousIntegrationBuild>false</ContinuousIntegrationBuild>
+    <NuGetAudit>true</NuGetAudit>
+    <NuGetAuditLevel>low</NuGetAuditLevel>
+    <NuGetAuditMode>all</NuGetAuditMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TF_BUILD)' == 'True' ">
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+  </PropertyGroup>
+</Project>
