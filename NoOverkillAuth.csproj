@@ -5,7 +5,7 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>12.0</LangVersion>
-		<NoWarn>$(NoWarn);IDE0003</NoWarn>
+		<NoWarn>$(NoWarn);IDE0003;CA1848</NoWarn>
 	</PropertyGroup>
 
 </Project>
